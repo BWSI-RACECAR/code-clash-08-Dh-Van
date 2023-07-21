@@ -38,8 +38,8 @@ class Solution:
         # return type: float
 
         #TODO: Write code below to return a float with the solution to the prompt.
-        biggest = 0
-        for i in range(0, battcap):
+        biggest = 0.01
+        for i in range(1, battcap):
             if(battcap / i > biggest): biggest = (i * (battcap / i)) 
 
         return battcap
