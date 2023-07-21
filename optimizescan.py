@@ -38,12 +38,9 @@ class Solution:
         # return type: float
 
         #TODO: Write code below to return a float with the solution to the prompt.
-        biggest = 0.01
-        for i in range(1, battcap):
-            if((battcap / i) * i > biggest): biggest = (i * (battcap / i)) 
+        meters = battcap / 250
 
-        return biggest
-
+        return (meters ** 2) *  1/8
 def main():
     battcap = int(input())
 
