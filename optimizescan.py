@@ -40,9 +40,9 @@ class Solution:
         #TODO: Write code below to return a float with the solution to the prompt.
         biggest = 0.01
         for i in range(1, battcap):
-            if(battcap / i > biggest): biggest = (i * (battcap / i)) 
+            if((battcap / i) * i > biggest): biggest = (i * (battcap / i)) 
 
-        return battcap
+        return biggest
 
 def main():
     battcap = int(input())
